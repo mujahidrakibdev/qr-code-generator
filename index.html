@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujahid's QR Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">QR Code Generator</h1>
+        <div class="data-container">
+            <label for="data" class="data-label">Data:</label>
+            <input type="text" class="data-input" placeholder="Enter What to Convert">
+        </div>
+        <div class="image-container">
+            <label for="image" class="upload-button">UPLOAD IMAGE</label>
+            <input type="file" id="image" class="image-input">
+        </div>
+
+
+        <div class="inner">
+            <div>
+                <label for="background-color">Background Color:</label>
+                <input type="color" id="background-color" class="bg-color-input">
+            </div>
+            
+            <div>
+                <label for="margin">Margin:</label>
+                <input type="number" class="margin-input">
+            </div>
+            
+            
+            
+            <div>
+                <label for="height">Height:</label>
+                <input type="number" class="height-input">
+            </div>
+            
+            <div>
+                <label for="width">Width:</label>
+                <input type="number" class="width-input">
+            </div>
+            
+            
+            
+            <div>
+                <label for="dot-style">Dot Style:</label>
+                <select  id="dot-options" class="dot-options">
+                    <option value="squares" class="squares">Squares</option>
+                    <option value="dot" class="dot">Dot</option>
+                    <option value="rounded" class="rounded">Rounded</option>
+                    <option value="extra-rounded" class="extra-rounded">Extra Rounded</option>
+                    <option value="classy" class="classy">Classy</option>
+                    <option value="classy-rounded" class="classy-rounded">Classy Rounded</option>
+                </select>
+            </div>
+            
+            
+            <div>
+                <label for="dot-color">Dot Color:</label>
+                <input type="color" class="dot-color" id="dot-color">
+            </div>
+            
+            
+            
+            <div>
+                <label for="corner-square">Square Style:</label>
+                <select  id="square-options" class="square-options">
+                    <option value="none" class="none">None</option>
+                    <option value="square" class="square">Square</option>
+                    <option value="dot" class="dot">Dot</option>
+                    <option value="extra-rounded" class="extra-rounded">Extra Rounded</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="square-color">Square Color:</label>
+                <input type="color" id="square-color" class="dot-color">
+            </div>
+        </div>
+
+
+        
+        <div class="lower-container">
+            <button class="generate-qr">Generate QR Code</button>
+            <div class="qr-container">
+            
+            </div>
+            <button class="download-btn">Download </button>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

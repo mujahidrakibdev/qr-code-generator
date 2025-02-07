@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", serif;
+    background: url(wallpaper.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(10, 11, 61, .5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    color: #F9E79F;
+}
+
+.main-heading{
+    font-family: "Protest Guerrilla", serif;
+    color: #0A0B3D;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+
+.data-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.data-input{
+    width: 100%;
+    padding: .65rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.data-label{
+    margin-right: .1rem;
+}
+
+#image{
+    display: none;
+}
+
+.image-container{
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.upload-button{
+    background-color: #6100EC;
+    color: white;
+    padding: .5em .75em;
+    border-radius: 30px;
+    font-size: .95rem;
+    cursor: pointer;
+}
+
+input[type="color"]{
+    height: 25px;
+    width: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.inner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.inner div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="number"]{
+    font-size: .95rem;
+    padding: .5rem;    
+    max-width: 75px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+select{
+    outline: none;
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+
+
+.lower-container{
+    text-align: center;
+    margin-top: 1.75em;
+}
+
+.generate-qr,
+.download-btn{
+    background-color: #9FF1AC;
+    color: #0A0B3D;
+    padding: .5em .75em;
+    border-radius: 30px;
+    font-size: .95rem;
+    cursor: pointer;
+    border: none;
+    margin: .25rem;
+    font-weight: bold;
+}
+
+.download-btn{
+    display: none;
+    background-color: #6100EC;
+    color:  white;
+    font-weight: normal;
+}
