@@ -31,29 +31,64 @@
 
         <div class="inner">
             <div>
+                <label for="height">Height:</label>
+                <input type="number" class="height-input" list="height-list">
+                <datalist id="height-list">
+                    <option value="100"></option>
+                    <option value="200"></option>
+                    <option value="300"></option>
+                    <option value="400"></option>
+                    <option value="500"></option>
+                    <option value="600"></option>
+                    <option value="700"></option>
+                    <option value="800"></option>
+                    <option value="900"></option>
+                    <option value="1000"></option>
+                </datalist>
+            </div>
+            
+            
+            <div>
+                <label for="width">Width:</label>
+                <input type="number" class="width-input" list="width-list">
+                <datalist id="width-list">
+                    <option value="100"></option>
+                    <option value="200"></option>
+                    <option value="300"></option>
+                    <option value="400"></option>
+                    <option value="500"></option>
+                    <option value="600"></option>
+                    <option value="700"></option>
+                    <option value="800"></option>
+                    <option value="900"></option>
+                    <option value="1000"></option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="margin">Margin:</label>
+                <input type="number" class="margin-input" list="margin-list">
+                <datalist id="margin-list">
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+            </div>
+            
+
+            <div>
                 <label for="background-color">Background Color:</label>
                 <input type="color" id="background-color" class="bg-color-input">
             </div>
             
-            <div>
-                <label for="margin">Margin:</label>
-                <input type="number" class="margin-input">
-            </div>
-            
-            
-            
-            <div>
-                <label for="height">Height:</label>
-                <input type="number" class="height-input">
-            </div>
-            
-            <div>
-                <label for="width">Width:</label>
-                <input type="number" class="width-input">
-            </div>
-            
-            
-            
+
             <div>
                 <label for="dot-style">Dot Style:</label>
                 <select  id="dot-options" class="dot-options">
@@ -75,7 +110,7 @@
             
             
             <div>
-                <label for="corner-square">Square Style:</label>
+                <label for="corner-square">Corner Square Style:</label>
                 <select  id="square-options" class="square-options">
                     <option value="none" class="none">None</option>
                     <option value="square" class="square">Square</option>
@@ -85,8 +120,22 @@
             </div>
             
             <div>
-                <label for="square-color">Square Color:</label>
-                <input type="color" id="square-color" class="dot-color">
+                <label for="square-color">Corner Square Color:</label>
+                <input type="color" id="square-color" class="square-color">
+            </div>
+
+            <div>
+                <label for="corner-dot">Corner Dot Style:</label>
+                <select  id="corner-dot-options" class="corner-dot-options">
+                    <option value="none" class="none">None</option>
+                    <option value="square" class="square">Square</option>
+                    <option value="dot" class="dot">Dot</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="corner-dot-color">Corner Dot Color:</label>
+                <input type="color" id="corner-dot-color" class="corner-dot-color">
             </div>
         </div>
 
@@ -97,11 +146,13 @@
             <div class="qr-container">
             
             </div>
-            <button class="download-btn">Download </button>
+            <button class="download-btn">Download</button>
         </div>
 
 
     </div>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling/lib/qr-code-styling.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
