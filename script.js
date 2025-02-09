@@ -12,12 +12,15 @@ const cornerDotOptions = document.querySelector(".corner-dot-options")
 const cornerDotColor = document.querySelector(".corner-dot-color")
 const generateBtn = document.querySelector(".generate-qr")
 const qrContainer = document.querySelector(".qr-container")
+const imageInput = document.querySelector(".image-input")
 const downloadBtn = document.querySelector(".download-btn")
 
 let qrCode;
+let uploadedImageURL = ""
 
 generateBtn.addEventListener("click", generateQrCode)
 // downloadBtn.addEventListener("click", downloadQrCode)
+
 
 function generateQrCode() {
     qrContainer.innerHTML = ""
@@ -48,8 +51,40 @@ function generateQrCode() {
         cornersDotOptions: {
             color: cornerDotColor.value,
             type: cornerDotOptions.value,
+        },
+        image: uploadedImageURL || null,
+        imageOptions: {
+            imageSize: 0.3,
+            margin: 5
         }
     });
 
     qrCode.append(qrContainer)
+
+    downloadBtn.style.display = "block"
+
 }
+
+
+
+imageInput.addEventListener("change", function (e) {
+    const file = e.target.files[0]
+
+    if (!file) {
+        return
+    }
+
+    const reader = new FileReader()
+    reader.readAsDataURL(file) 
+
+    
+
+    reader.onload = function () {
+        uploadedImageURL = reader.result
+        
+        
+    }
+
+
+})
+
