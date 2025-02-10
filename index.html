@@ -19,6 +19,9 @@
 <body>
     <div class="container">
         <h1 class="main-heading">QR Code Generator</h1>
+        <p class="error-message">
+            
+        </p>
         <div class="data-container">
             <label for="data" class="data-label">Data:</label>
             <input type="text" class="data-input" placeholder="Enter What to Convert">
@@ -26,6 +29,7 @@
         <div class="image-container">
             <label for="image" class="upload-button">UPLOAD IMAGE</label>
             <input type="file" id="image" class="image-input">
+            <p class="upload-message">Image Uploaded</p>
         </div>
 
 
@@ -85,7 +89,7 @@
 
             <div>
                 <label for="background-color">Background Color:</label>
-                <input type="color" id="background-color" class="bg-color-input">
+                <input type="color" id="background-color" class="bg-color-input" value="#ffffff">
             </div>
             
 

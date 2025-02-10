@@ -22,15 +22,23 @@ body{
     color: #F9E79F;
 }
 
+
 .main-heading{
     font-family: "Protest Guerrilla", serif;
     color: #0A0B3D;
     font-weight: 500;
     font-size: 2.5rem;
     text-align: center;
+    
 }
 
-
+.error-message{
+    background-color: #DC143C;
+    padding: .25rem .5rem;
+    color: #0A0B3D;
+    opacity: 0;
+    transition: all 2s ease;
+}
 
 .data-container{
     display: flex;
@@ -57,7 +65,7 @@ body{
 
 .image-container{
     text-align: center;
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .upload-button{
@@ -67,6 +75,14 @@ body{
     border-radius: 30px;
     font-size: .95rem;
     cursor: pointer;
+}
+
+.upload-message{
+    background-color: #16C47F;
+    padding: .25rem .5rem;
+    color: #0A0B3D;
+    opacity: 0;
+    transition: all 2s ease;
 }
 
 input[type="color"]{
@@ -118,7 +134,7 @@ select{
 
 .generate-qr,
 .download-btn{
-    background-color: #9FF1AC;
+    background-color: #16C47F;
     color: #0A0B3D;
     padding: .5em .75em;
     border-radius: 30px;
@@ -134,4 +150,24 @@ select{
     background-color: #6100EC;
     color:  white;
     font-weight: normal;
+    margin: 0 auto;
+}
+
+label{
+    background-color: #FFD65A;
+    color: #0A0B3D;
+    border-radius: 20px;
+    padding: 0 .10rem;
+}
+
+.container.shake{
+    animation: shake 0.3s linear 1;
+}
+
+@keyframes shake {
+    0%{ transform: translate(10px, 5px);}
+    25%{ transform: translate(-5px, 0px);}
+    50%{ transform: translate(8px, 2px);}
+    75%{ transform: translate(-2px, 5px);}
+    100%{ transform: translate(0px, 0px);}
 }
